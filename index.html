@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
+    <meta name="keywords" content="nevvwrk, programmer, watcharakorn, inprasert, newwatcharakorn, newwrk, newinprasert, zentaze">
+    <meta name="author" content="Watcharakorn inprasert">
+    <meta name="description" content="My info about junior programmer. Live in Thailand">
+    <title>nevvwrk</title>
+    
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+    /* root section */
     :root {
-        --bg-color: #fff;
+        --bg-color: #C32200;
     }
     /* global variable */
     a{
-        list-style-type: none;
+        text-decoration: none;
+    }
+    ul{ 
+        list-style-type:none;
     }
     *{
         margin: 0;
@@ -19,41 +29,40 @@
     }
     body{
         box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Inconsolata', monospace , sans-serif;
     }
-    nav {
-        display: flex;
-        position: relative;
-        margin: 0;
-        padding:1rem;
+    header {
         width: 100vw;
-        height: auto;
-        justify-content: center;
-        align-content:center;
+        height: 100vh;
+        position: relative;
+        background-color: var(--bg-color);
     }
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        text-decoration: none;
+    .info_detail span,p {
+        color: #fff;
+        font-family: 'Inconsolata' , 'monospace';
+        font-weight: 500;
+        font-size: 1.5rem;
     }
+    .img-header img {
+        width: 20rem;
+        height: 20rem;
+    }
+    
 </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Service</a>
-            </li>
-            <li>
-                <a href="#">contact</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <div class="box">
+            <div class="info_detail">
+                <span>I'm Web developer</span>
+                <p>I'm newton. Live in Thailand</p>
+                <p>Language : Javascript,Java,Node.js</p>
+            </div>
+            <div class="img-header">
+                <a href="#"><img src="https://i2.fpic.cc/file/img-b1/2021/11/04/pexels-grafixartphoto-samir-belhamra-4254555.jpg" alt="pexels-grafixartphoto-samir-belhamra-4254555.jpg" border="0"></a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
