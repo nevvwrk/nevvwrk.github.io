@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | nevvwrk</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!-- google any -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219704416-1">
-    </script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     tag('js', new Date());
 
-     gtag('config', 'UA-219704416-1');
-    </script>
 </head>
 <body>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-header-caption:#E1FF8A;
+    --color-main1: #f24c4c;
+    --color-main2: #ec9b3b;
+    --color-main3: #f7d716;
+    --color-main4: #293462;
+    --color-work-experience: #3B8181;
+    --color-mainbackground: #00111B;
+    --border-radius: 10px;
+    
+}
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #00111B;
+    background-color: var(--color-mainbackground);
 }
 
 /* global variable */
@@ -44,7 +45,7 @@ body {
 #container {
     max-width: 1000px;
     height: auto;
-    margin: 0 auto;
+    margin: 2rem auto 2rem auto;
     padding: 0;
 }
 #header {
@@ -59,7 +60,7 @@ body {
 #designer-text {
     font-style: normal;
     font-weight: 600;
-    color: #E1FF8A;
+    color: var(--color-header-caption);
     font-size: 1rem;
     margin: .8rem 0 0 0;
     letter-spacing: 0.29em;
@@ -79,9 +80,11 @@ body {
 
 #work-experience {
     margin: 1.9rem 0 0 0;
+    padding: 1rem 0 1rem 0;
     width: 100%;
-    height: 16.25rem;
+    height: auto;
     background-color: #3B8181;
+    border-radius: var(--border-radius);
 }
 #header-workx {
     display: flex;
@@ -106,7 +109,7 @@ body {
 .experience-detail {
     text-align:center;
     width: 300px;
-    height: 140px;
+    height: auto;
 }
 .experience-detail h1 {
     font-size: .875rem;
@@ -117,69 +120,30 @@ body {
     font-style: normal;
     font-weight: 400;
 }
-
 /* skill box */
 
 #skill-box {
-    width: 100%;
-    height: 16.25rem;
-    background-color: #C2FFBD;
-    margin: 2.265rem 0 0 0;
-    padding: 0;
-    display: flex;
-    justify-content :center;
-    align-items:center;
-    gap: 1rem;
-}
-.skill-detail {
-    width: 12rem;
+    max-width: 100%;
     height: auto;
-    text-align :center;
+    background-color: var(--color-main2);
+    margin-top: 2.2rem;
+    padding: 4rem;
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(8rem, 1fr) );
+    grid-row-gap: 4rem;
+    justify-items: center;
+}   
+.pic-skill {
+    width: 5rem;
+    height: 5rem;
+    transition: .2s ease-in-out;
 }
-.paragrap-skill-detail {
-    margin: 1rem 0 0 0;
-}
-.paragrap-skill-detail h1 {
-    font-size: .875rem;
-    margin: 0;
-}
-.paragrap-skill-detail p {
-    margin: 1rem 0 0 0;
-    font-size: .875rem;
+.pic-skill:hover {
+    transform: scale(1.1);
 }
 
 /* about-expertise box */
-#about-expertise-box {
-    margin: 3rem 0 3.25rem 0;
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#about-box {
-    width: 30rem;
-    height: 100%;
-    background-color: #FFD19A;
-}
-#expertise-box {
-    width: 30rem;
-    height: 100%;
-    background-color: #A5B3FF;
-}
-#header-aboutme {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    margin: 0;
-    width: 100%;
-    height: 5.6rem;
-}
-#paragrah-aboutme {
-    padding: 1rem;
-    margin: 1rem 0;
-    text-align:center;
-}
 
 
 
@@ -210,89 +174,79 @@ body {
     }
 }
     </style>
+
+    
     <div id="container">
+        <!-- Header -->
         <div id="header">
             <h4 id="header-text">NEVVWRK</h4>
-            <h1 id="designer-text">DESIGNER</h1>
+            <h1 id="designer-text">Software Engineer / Web Developer</h1>
             <hr id="header-hr">
             <div id="paragrah-header" class="letter-spacing">
                 <p>wrk.inps@gmail.com</p>
-                <p>080-008-1685</p>
+                <p>092-361-0865</p>
             </div>
         </div>
+
         <div id="work-experience">
             <h2 id="header-workx">WORK EXPERIENCE</h2>
             <div id="content-workx">
                 <div class="experience-detail letter-spacing">
-                    <h1>FREELANCE</h1>
-                    <p>2019 - 2020</p>
-                    <p>Grahpic design and editor<br>
-                    Just now web developer learnning<br>
-                    And Update to freelance website within 2022
+                    <h1>FREELANCE<br>Grahpic Designer and Editor</h1>
+                    <p>2018 - 2020</p>
+                    <p>
+                        I'm was streammer and content creator little person<br>
+                        And get jobs about packaging design and advertising banner design
                     </p>
                 </div>
                 <div class="experience-detail letter-spacing">
-                    <h1>FREELANCE</h1>
-                    <p>2019 - 2020</p>
-                    <p>Grahpic design and editor<br>
-                    Just now web developer learnning<br>
-                    And Update to freelance website within 2022
+                    <h1>FREELANCE<br>Web Development</h1>
+                    <p>2020 - 2022</p>
+                    <p>
+                        Web development with <br>Front-end html,css,javascript and Reactjs 
+                        <br>And Back-end PHP, Nodejs(learning more) , SQL
                     </p>
                 </div>
                 <div class="experience-detail letter-spacing">
-                    <h1>FREELANCE</h1>
-                    <p>2019 - 2020</p>
-                    <p>Grahpic design and editor<br>
-                    Just now web developer learnning<br>
-                    And Update to freelance website within 2022
+                    <h1>Web Application</h1>
+                    <p>2022</p>
+                    <p>
+                        Java Application with Java swing, JavaFX And Mysql
                     </p>
                 </div>
+                
             </div>
         </div>
 
         <div id="skill-box">
-            <div class="skill-detail">
-                <div class="img-skill-detail">
-                    <i class='bx bx-camera-movie bx-lg'></i>
-                </div>
-                <div class="paragrap-skill-detail">
-                    <h1>PHOTOGRAPHY</h1>
-                    <p>I'm doing event about photography</p>
-                </div>
-            </div>
-            <div class="skill-detail">
-                <div class="img-skill-detail">
-                    <i class='bx bxs-edit-alt bx-lg'></i>
-                </div>
-                <div class="paragrap-skill-detail">
-                    <h1>PHOTOGRAPHY</h1>
-                    <p>I'm doing event about photography</p>
-                </div>
-            </div>
-            <div class="skill-detail">
-                <div class="img-skill-detail">
-                    <i class='bx bxs-file-doc bx-lg' ></i>
-                </div>
-                <div class="paragrap-skill-detail">
-                    <h1>PHOTOGRAPHY</h1>
-                    <p>I'm doing event about photography</p>
-                </div>
-            </div>
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Adobe Photoshop">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968472.png" alt="Adobe Illustrator">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968525.png" alt="Adobe PremierPro">
+            
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968428.png" alt="Adobe AfterEffece">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968559.png" alt="Adobe XD">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png" alt="Github">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/888/888867.png" alt="Microsoft Office">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/2085/2085263.png" alt="HTML,CSS,JS">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="Javascript">   
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="Reactjs">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+            <img class="pic-skill" src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
         </div>
 
-        <div id="about-expertise-box">
-            <div id="about-box">
-                <h1 id="header-aboutme" class="border-bottom">ABOUT ME</h1>
-                <p id="paragrah-aboutme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id adipisci veniam ad fugiat ipsam, ea quasi consectetur ullam dolor? Nesciunt nostrum hic eveniet in sint tempora voluptates, commodi laudantium magnam, cumque adipisci omnis quae alias autem eos ipsa necessitatibus ipsam! Rerum atque asperiores, amet suscipit animi doloremque repellendus sed cumque praesentium ab ad accusamus doloribus dolore reiciendis, delectus hic nisi porro minima. Soluta consequuntur eligendi tempora veniam, magni accusamus minima sapiente! Placeat laboriosam similique unde temporibus provident, aliquam, dicta dolore natus sint itaque consequatur voluptates vel recusandae, doloremque quaerat aut! Vero corrupti sequi porro, quasi incidunt quo cumque accusantium?</p>
-            </div>
-            
-            
-            <div id="expertise-box">
-
-            </div>
-        </div>
+        
     <!-- close class container -->    
     </div> 
-    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+    <!-- import boxicons framework -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+    <!-- Normal javascript -->
+    <script>
+
+    </script>
 </body>
 </html>
