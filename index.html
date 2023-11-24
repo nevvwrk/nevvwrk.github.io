@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>nevvwrk</title>
+
+</head>
+<body>
+    <style>
+        :root {
+            --nav-bg-color: #ffc600;
+            --nav-logo-color: #000;
+            --introduce-img-width: 500px;
+            --introduce-img-height: 500px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter Tight', sans-serif;
+            font-family: 'Teko', sans-serif;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+        nav {
+            max-width: 100vw;
+            height: auto;
+            background-color: var(--nav-bg-color);
+            position: relative;
+            margin: 0;
+            padding: 0 2rem;
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .logo {
+            color:var(--nav-logo-color);
+            font-size: 3rem;
+            font-family: 'Teko', sans-serif !important;
+            font-weight: 600;
+            text-align:center;
+            user-select: none;
+            margin: 0;
+            padding: 0;
+        }
+        a.nav-github {
+            color: #000;
+        }
+        main {
+            position: relative;
+            max-width :80vw;
+            min-height: 100vh;
+            margin: 0 auto;
+            padding: 0;
+        }
+        /* introduce section */
+        #introduce {
+            margin: 2rem auto;
+            padding: 0;
+            width : 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items:center;
+            gap: 2rem;
+            
+        }
+        #introduce-img > img {
+            width: var(--introduce-img-width);
+            height: var(--introduce-img-height);
+        }
+        #introduce-des {
+            max-width: 600px;
+            max-height: auto;
+        }
+        #introduce-paragraph {
+            margin-bottom: 2rem;
+        }
+        #introduce-paragraph > h1 {font-size: 2rem;}
+        #introduce-paragraph > p {font-size: 1.5rem; font-weight:500;}
+        #introduce-techstack > h1{
+            font-size: 1.5rem;
+            
+        }
+</style>
+
+    <nav>
+        <div class="logo">nevvwrk</div>
+        <a class="nav-github" href="https://github.com/nevvwrk/" alt="github" target="_blank"><i class='bx bxl-github bx-md'></i></a>
+    </nav>
+    <main>
+        <div id="introduce">
+            <div id="introduce-img">
+                <img src="https://img5.pic.in.th/file/secure-sv1/undraw_Projections_re_ulc6.png" alt="my profile" loading="lazy" />
+            </div>
+            <div id="introduce-des">
+                <div id="introduce-paragraph">
+                    <h1>I'm web developer and live in Thailand</h1>
+                    <p>Now, I studied bachelor degree in computer science<br>I will improve to full stack developer and study about interest as Machine learning and blockchain</p>
+                </div>
+                <div id="introduce-techstack">
+                    <h1>Frontend tech stack</h1>
+                    <i class='bx bxl-html5 bx-lg'></i>
+                    <i class='bx bxl-css3 bx-lg' ></i>
+                    <i class='bx bxl-javascript bx-lg' ></i>
+                    <i class='bx bxl-tailwind-css bx-lg' ></i>
+                    <i class='bx bxl-react bx-lg'></i>
+                    <h1>Backend tech stack</h1>
+                    <i class='bx bxl-java bx-lg'></i>
+                    <i class='bx bxl-postgresql bx-lg' ></i>
+                </div>
+            </div>
+        </div>
+        <section>
+        
+        </section>
+    </main>
+
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <scritp>
+
+    </scritp>
+</body>
+</html>
