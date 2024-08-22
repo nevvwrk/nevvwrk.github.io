@@ -13,7 +13,10 @@
 <body>
     <style>
         :root {
-            --nav-bg-color: #ffc600;
+            --theme-color: #800000;
+            --second-theme: #982B1C;
+            --cutof-theme: #DAD4B5;
+            --cutof-theme-second: #F2E8C6;
             --nav-logo-color: #000;
             --introduce-img-width: 500px;
             --introduce-img-height: 500px;
@@ -30,7 +33,7 @@
         nav {
             max-width: 100vw;
             height: auto;
-            background-color: var(--nav-bg-color);
+            background-color: var(--theme-color);
             position: relative;
             margin: 0;
             padding: 0 2rem;
@@ -39,7 +42,7 @@
             align-items:center;
         }
         .logo {
-            color:var(--nav-logo-color);
+            color: #fff;
             font-size: 3rem;
             font-family: 'Teko', sans-serif !important;
             font-weight: 600;
@@ -48,8 +51,17 @@
             margin: 0;
             padding: 0;
         }
-        a.nav-github {
-            color: #000;
+        .contacts {
+            display: flex;
+            flex-direction: row;
+            gap: 1.2rem;
+        }
+        .contacts a {
+            color: #fff;
+            transition: 0.1s ease-in;
+        }
+        .contacts a:hover {
+            color: var(--cutof-theme-second);
         }
         main {
             position: relative;
@@ -80,20 +92,111 @@
             max-width: 600px;
             max-height: auto;
         }
-        #introduce-paragraph {
-            margin-bottom: 2rem;
+        #introduce-paragraph { margin-bottom: 2rem; }
+        #introduce-paragraph > h1 { font-size: 2rem; }
+        #introduce-paragraph > p { font-size: 1.5rem; font-weight:500; }
+        #introduce-techstack > h1 { font-size: 1.5rem; }
+        .techstack-des {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        } 
+        .techstack-des-uni {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            cursor: default;
         }
-        #introduce-paragraph > h1 {font-size: 2rem;}
-        #introduce-paragraph > p {font-size: 1.5rem; font-weight:500;}
-        #introduce-techstack > h1{
+        .techstack-des-uni p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #000;       
+        }
+
+        /* Techstack when hover configs */
+        .transition-03s { transition:color 0.3s ease-in;}
+        #html-logo:hover {color: #fc662a;}
+        #css-logo:hover {color: #1f24af;}
+        #js-logo:hover {color: #f4dc00;}
+        #tailwind-logo:hover {color: #3caffc;}
+        #react-logo:hover {color: #09ddf9;}
+        #node-logo:hover {color: #01bf14;}
+        #java-logo:hover {color: #ce6204;}
+        #postgresql-logo:hover {color: #018ca8;}
+        #database-logo:hover {color: #c4000d;}
+
+        /* Project section */
+        #project-show {margin-bottom: 2rem;}
+        #project-show h1 {
             font-size: 1.5rem;
-            
         }
+
+        #hashtag-header {
+            margin: 0;
+            padding: .2rem 1rem;
+            width: fit-content;
+            background-color: var(--theme-color);
+            border-radius: .4rem;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .hashtag-box {
+            display: flex;
+            gap: .8rem;
+            margin: 0;
+            padding: .6rem;
+            max-width: 100%;
+            height: auto;
+            border-radius: .4em;
+        }
+
+        #clear-button {
+            padding:  .2rem 1rem;
+            display: flex;
+            align-items:center;
+            width: fit-content;
+            background-color: var(--cutof-theme-second);
+            border-radius: .2rem;
+            cursor: pointer;
+        }
+        
+        #project-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1.2rem;
+        }
+        .project-details {
+            position: relative;
+            margin: 0;
+            padding: .4rem;
+            max-width: 20rem;
+            height: 20rem;
+            background-color: var(--cutof-theme);
+            border-radius: 1.4rem;
+        }
+        .hashtag-details {
+            position: absolute;
+            bottom: .2rem;
+            right: .6rem;
+            display: none;
+        }
+        .hashtag-details a {
+            text-decoration: none;
+            color: var(--theme-color);
+            font-size: 1.2rem;
+        }
+        
+
 </style>
 
     <nav>
         <div class="logo">nevvwrk</div>
-        <a class="nav-github" href="https://github.com/nevvwrk/" alt="github" target="_blank"><i class='bx bxl-github bx-md'></i></a>
+        <div class="contacts">
+            <a class="nav-github" href="https://github.com/nevvwrk/" alt="github" target="_blank"><i class='bx bxl-github bx-md'></i></a>
+            <a href="https://facebook.com/nevvwrk/" alt="facebook" target="_blank" class="nav-facebook"><i class='bx bxl-facebook-circle bx-md'></i></a>
+        </div>
     </nav>
     <main>
         <div id="introduce">
@@ -102,30 +205,140 @@
             </div>
             <div id="introduce-des">
                 <div id="introduce-paragraph">
-                    <h1>I'm web developer and live in Thailand</h1>
+                    <h1>I am web developer and live in Thailand</h1>
                     <p>Now, I studied bachelor degree in computer science<br>I will improve to full stack developer and study about interest as Machine learning and blockchain</p>
                 </div>
                 <div id="introduce-techstack">
-                    <h1>Frontend tech stack</h1>
-                    <i class='bx bxl-html5 bx-lg'></i>
-                    <i class='bx bxl-css3 bx-lg' ></i>
-                    <i class='bx bxl-javascript bx-lg' ></i>
-                    <i class='bx bxl-tailwind-css bx-lg' ></i>
-                    <i class='bx bxl-react bx-lg'></i>
+                    <h1>Frontend tech stack</i></h1>
+                    <div class="techstack-des">
+                        <div class="techstack-des-uni transition-03s" id="html-logo">
+                            <i class='bx bxl-html5 bx-lg'></i>
+                            <p>HTML</p>
+                            
+                        </div>
+                        <div class="techstack-des-uni transition-03s" id="css-logo"">
+                            <i class='bx bxl-css3 bx-lg'></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="techstack-des-uni transition-03s" id="js-logo">
+                            <i class='bx bxl-javascript bx-lg'></i>
+                            <p>Javascript</p>
+                        </div>
+                        <div class="techstack-des-uni transition-03s" id="tailwind-logo">
+                            <i class='bx bxl-tailwind-css bx-lg'></i>
+                            <p>Tailwindcss</p>
+                        </div>
+                        <div class="techstack-des-uni transition-03s" id="react-logo">
+                            <i class='bx bxl-react bx-lg'></i>
+                            <p>Reactjs</p>
+                        </div>
+                    </div>
+                    
                     <h1>Backend tech stack</h1>
-                    <i class='bx bxl-java bx-lg'></i>
-                    <i class='bx bxl-postgresql bx-lg' ></i>
+                    <div class="techstack-des">
+                        <div class="techstack-des-uni transition-03s" id="node-logo">
+                            <i class="bx bxl-nodejs bx-lg"></i>
+                            <p>Nodejs (express)</p>
+                        </div>
+                        <div class="techstack-des-uni transition-03s" id="java-logo">
+                            <i class="bx bxl-java bx-lg"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="techstack-des-uni transition-03s" id="postgresql-logo">
+                            <i class="bx bxl-postgresql bx-lg"></i>
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div class="techstack-des-uni transition-03s" id="database-logo">
+                            <i class='bx bxs-data bx-lg'></i>
+                            <p>MySQL & MSSQL</p>    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <section>
-        
+        <section id="project-show">
+            <h1>Projects</h1>
+            <article class="hashtag-box">
+                <div id="clear-button"><i class='bx bx-x bx-sm'></i><p>clear</p></div>
+                <p id="hashtag-header"></p>
+            </article>
+            <section id="project-grid">
+                <article class="project-details" data-target="hashtag-1">
+                    <div>
+                        <h1>Discord Chatbot</h1>
+                    </div>
+                    <div id="hashtag-1" class="hashtag-details">
+                        <a href="#javascript">#javascript</a>
+                    </div>
+                </article>
+                <article class="project-details" data-target="hashtag-2">
+                    <div>
+                        <h1>POS System base on website</h1>
+                    </div>
+                    <div id="hashtag-2" class="hashtag-details">
+                        <a href="#javascript">#reactjs</a>
+                        <a href="#javascript">#expressjs</a>
+                    </div>
+                </article>
+                <article class="project-details" data-target="hashtag-3">
+                    <div>
+                        <h1>POS System base on website</h1>
+                    </div>
+                    <div class="hashtag-details" id="hashtag-3">
+                        <a href="#javascript">#reactjs</a>
+                        <a href="#javascript">#expressjs</a>
+                    </div>
+                </article>
+                <article class="project-details" data-target="hashtag-4">
+
+                </article>
+                <article class="project-details">
+
+                </article>
+                <article class="project-details">
+
+                </article>
+            </section>
         </section>
     </main>
 
-     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <scritp>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
 
-    </scritp>
+        const clearButton = document.getElementById('clear-button');
+        const hashtag = document.getElementById('hashtag-header');
+
+        hashtag.innerHTML = "#" + "Java";
+
+        // function for remove hashtag header when click clear button
+        clearButton.addEventListener('click', () => {
+            if(hashtag) {
+                hashtag.remove();
+            }
+        });
+
+        // function when mouse hover in project card any element for show hashtag details
+        // when first time browser loading --> check length of element and add event litener
+        // and use getAttribute function for trigger between event element and target element 
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const element = document.getElementsByClassName("project-details");
+
+            for(let i = 0; i < element.length; i++ ) {
+                element[i].addEventListener('mouseover', function() {
+                    const targetId = this.getAttribute("data-target");
+                    const targetEl = document.getElementById(targetId);
+                    targetEl.style.display = "block";
+                });
+
+                element[i].addEventListener('mouseout', function() {
+                    const targetId = this.getAttribute("data-target");
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.style.display = 'none';
+                });
+            }
+        });
+
+    </script>
 </body>
 </html>
