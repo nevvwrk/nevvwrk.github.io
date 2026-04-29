@@ -38,8 +38,8 @@ const projects = [
         desc: "A web application for reporting natural disasters, allowing users to submit reports with location and details even the slightest signal in the loose signal area, and view a map of reported incidents.",
         image: "https://via.placeholder.com/800x450?text=Project+Preview+1",
         tech: [ "Next.js", "Prisma", "Tailwindcss", "JWT","Typescript", "PostgreSQL", "Leaflet.js"],
-        demo: "#",
-        code: "https://github.com/nevvwrk/disaster_report"
+        demo: "https://exotic-arrival-kevin-trim.trycloudflare.com/",
+        code: "https://github.com/nevvwrk/disaster-report"
     },
     {
         title: "School website - โรงเรียนเทศบาลแมวจร",
