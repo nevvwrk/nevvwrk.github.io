@@ -36,7 +36,7 @@ const projects = [
     {
         title: "Natural Disaster Report website - เว็บไซต์รายงานภัยพิบัติ",
         desc: "A web application for reporting natural disasters, allowing users to submit reports with location and details even the slightest signal in the loose signal area, and view a map of reported incidents.",
-        image: "https://via.placeholder.com/800x450?text=Project+Preview+1",
+        image: "https://i.ibb.co/9HR2490S/disaster-report-thump.png",
         tech: [ "Next.js", "Prisma", "Tailwindcss", "JWT","Typescript", "PostgreSQL", "Leaflet.js"],
         demo: "https://exotic-arrival-kevin-trim.trycloudflare.com/",
         code: "https://github.com/nevvwrk/disaster-report"
@@ -44,18 +44,18 @@ const projects = [
     {
         title: "School website - โรงเรียนเทศบาลแมวจร",
         desc: "A personal portfolio website to showcase my projects, skills, and contact information in a clean layout.",
-        image: "https://via.placeholder.com/800x450?text=Project+Preview+2",
+        image: "https://i.ibb.co/SDFsjDFV/web-school1.png",
         tech: ["Next.js", "Tailwindcss", "Nodejs", "Typescript"],
         demo: "https://nevvwrkschool.vercel.app/",
         code: "https://github.com/nevvwrk/school_website_next"
     },
     {
-        title: "IoT Remote Controller",
-        desc: "A project for controlling devices with microcontroller-based signal transmission and receiver logic.",
-        image: "https://via.placeholder.com/800x450?text=Project+Preview+3",
-        tech: ["Arduino", "C++", "Electronics"],
+        title: "Java Desktop program - Vaccine booking",
+        desc: "Java desktop program for booking vaccine on demand in 2019 covid need moderna | GUI and out-dated",
+        image: "https://i.ibb.co/v4RBms3Q/cb486e79-df84-4cbf-8611-e9cffa85d803.png",
+        tech: ["Java","Desktop"],
         demo: "#",
-        code: "#"
+        code: "https://github.com/nevvwrk/Vaccine-booking-GUI/tree/main"
     }
 ];
 const projectList = document.getElementById("projectList");
