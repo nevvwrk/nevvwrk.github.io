@@ -13,7 +13,7 @@ const experiences = [
     },
     {
         date: "2022 - 2023",
-        role: "Graphic Designer",
+        role: "Graphic Designer (สำหรับงานโฆษณาบนโซเชียลมีเดีย)",
         company: "Fastwork | Fiverr",
         desc: "Create branding for advertising, social media, and print materials, including logos, brochures, and posters. Collaborate with clients to understand their design needs and deliver high-quality & editing image for marketing, social media, and websites."
     }
