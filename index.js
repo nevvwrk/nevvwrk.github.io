@@ -38,7 +38,7 @@ const projects = [
         desc: "A web application for reporting natural disasters, allowing users to submit reports with location and details even the slightest signal in the loose signal area, and view a map of reported incidents.",
         image: "https://i.ibb.co/9HR2490S/disaster-report-thump.png",
         tech: [ "Next.js", "Prisma", "Tailwindcss", "JWT","Typescript", "PostgreSQL", "Leaflet.js"],
-        demo: "https://exotic-arrival-kevin-trim.trycloudflare.com/",
+        demo: "https://automatically-clarke-row-microphone.trycloudflare.com/th",
         code: "https://github.com/nevvwrk/disaster-report"
     },
     {
